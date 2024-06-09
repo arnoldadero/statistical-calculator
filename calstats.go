@@ -1,4 +1,6 @@
-func CalculateStatistics(data[]int){
+package main
+
+func CalculateAndPrintStatistics(data[]int){
 	average := calculateAverage(data)
     median  := calculateMedian(data)
 	variance := calculateVariance(data, average)

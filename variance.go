@@ -1,8 +1,10 @@
-func calculateVariance(data []int, mean int) int {
+package main
+
+func CalculateVariance(data []int, mean int) int {
 	sumOfSquares := 0
-	 for _, value := range data {
+	for _, value := range data {
 		diff := value - mean
 		sumOfSquares += diff * diff
-	 }
-	 return somOfSquares / len(data)
+	}
+	return sumOfSquares / len(data)
 }
