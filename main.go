@@ -14,7 +14,7 @@ func main() {
 	filePath := os.Args[1]
 
 	// Read data from the provided file path
-	data, err := readDataFromFile(filePath)
+	data, err := ReadDataFromFile(filePath)
 	if err != nil {
 		log.Fatal(err)
 	}

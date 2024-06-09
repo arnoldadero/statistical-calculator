@@ -1,13 +1,15 @@
 package main
 
-func CalculateAndPrintStatistics(data[]int){
-	average := calculateAverage(data)
-    median  := calculateMedian(data)
-	variance := calculateVariance(data, average)
-	stdDeviation := calculateStandardDeviation(variance)
+import "fmt"
+
+func CalculateAndPrintStatistics(data []int) {
+	average := CalculateAverage(data)
+	median := CalculateMedian(data)
+	variance := CalculateVariance(data, average)
+	stdDeviation := CalculateStandardDeviation(variance)
 
 	fmt.Printf("Average: %d\n", average)
-	fmt,Printf("Median: %d\n", median)
+	fmt.Printf("Median: %d\n", median)
 	fmt.Printf("Variance: %d\n", variance)
 	fmt.Printf("Standard Deviation: %d\n", stdDeviation)
 }

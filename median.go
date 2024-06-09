@@ -1,7 +1,9 @@
 package main
 
+import "sort"
+
 func CalculateMedian(data []int) int {
-	sort.Int(data)
+	sort.Ints(data)
 	n := len(data)
 	if n%2 == 0 {
 		return (data[n/2-1] + data[n/2]) / 2

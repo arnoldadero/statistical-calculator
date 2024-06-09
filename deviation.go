@@ -1,5 +1,8 @@
 package main
 
+import "math"
+
+
 func CalculateStandardDeviation(variance int) int {
-	return int(math.sqrt(float64(variance)))
+	return int(math.Sqrt(float64(variance)))
 }
