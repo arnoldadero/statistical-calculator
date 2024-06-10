@@ -1,9 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"math-skills/statcals"
+)
 
 func CalculateAndPrintStatistics(data []int) {
-	average := CalculateAverage(data)
+	average := statcals.CalculateAverage(data)
 	median := CalculateMedian(data)
 	variance := CalculateVariance(data, average)
 	stdDeviation := CalculateStandardDeviation(variance)
