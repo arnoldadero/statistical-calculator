@@ -1,4 +1,4 @@
-package main
+package statcalc
 
 func CalculateVariance(data []int, mean int) int {
 	sumOfSquares := 0

@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 
-	"math-skills/statcals"
-)
+	sc "math-skills/statcalc"
+) 
 
 func CalculateAndPrintStatistics(data []int) {
-	average := statcals.CalculateAverage(data)
-	median := CalculateMedian(data)
-	variance := CalculateVariance(data, average)
-	stdDeviation := CalculateStandardDeviation(variance)
+	average := sc.CalculateAverage(data)
+	median := sc.CalculateMedian(data)
+	variance := sc.CalculateVariance(data, average)
+	stdDeviation := sc.CalculateStandardDeviation(variance)
 
 	fmt.Printf("Average: %d\n", average)
 	fmt.Printf("Median: %d\n", median)

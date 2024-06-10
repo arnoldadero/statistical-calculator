@@ -1,4 +1,4 @@
-package main
+package statcalc
 
 func CalculateAverage(data []int) int {
 	sum := 0
