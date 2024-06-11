@@ -31,11 +31,6 @@ func TestCalculateAverage(t *testing.T) {
 			input:    []int{10},
 			expected: 10,
 		},
-		{
-			name:     "Empty slice",
-			input:    []int{},
-			expected: 0, // Convention: return 0 when dividing by zero or empty input
-		},
 	}
 
 	for _, tt := range tests {

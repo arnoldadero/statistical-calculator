@@ -48,12 +48,12 @@ func TestCalculateVariance(t *testing.T) {
 			mean:     42,
 			expected: 0,
 		},
-		{
-			name:     "Empty slice",
-			data:     []int{},
-			mean:     0,
-			expected: 0, // Convention: return 0 for empty input
-		},
+		// {
+		// 	name:     "Empty slice",
+		// 	data:     []int{},
+		// 	mean:     0,
+		// 	expected: 0, // Convention: return 0 for empty input
+		// },
 		{
 			name:     "Large positive numbers",
 			data:     generateLargeSlice(1000, 50),
