@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	sc "math-skills/statcalc"
-) 
+)
 
 func CalculateAndPrintStatistics(data []float64) {
 	average := sc.CalculateAverage(data)
@@ -12,8 +12,8 @@ func CalculateAndPrintStatistics(data []float64) {
 	variance := sc.CalculateVariance(data, average)
 	stdDeviation := sc.CalculateStandardDeviation(variance)
 
-	fmt.Printf("Average: %f\n", average)
-	fmt.Printf("Median: %f\n", median)
-	fmt.Printf("Variance: %f\n", variance)
-	fmt.Printf("Standard Deviation: %f\n", stdDeviation)
+	fmt.Printf("Average: %d\n", average)
+	fmt.Printf("Median: %d\n", median)
+	fmt.Printf("Variance: %d\n", variance)
+	fmt.Printf("Standard Deviation: %d\n", stdDeviation)
 }

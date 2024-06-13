@@ -2,6 +2,6 @@ package statcalc
 
 import "math"
 
-func CalculateStandardDeviation(variance float64) float64 {
-	return math.Sqrt(variance)
+func CalculateStandardDeviation(variance int) int {
+	return int(math.Round(math.Sqrt(float64(variance))))
 }
