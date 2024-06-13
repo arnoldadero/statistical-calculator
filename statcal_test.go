@@ -1,7 +1,6 @@
 package main
 
 import (
-	"math"
 	"testing"
 
 	sc "math-skills/statcalc"
@@ -9,10 +8,10 @@ import (
 
 func TestCalculateAverage(t *testing.T) {
 	data := []float64{1, 2, 3, 4, 5}
-	expected := 3
+	expected := 3.0
 	result := sc.CalculateAverage(data)
 	if result != expected {
-		t.Errorf("calculateAverage(%v) = %d; want %d", data, result, expected)
+		t.Errorf("calculateAverage(%v) = %f; want %f", data, result, expected)
 	}
 }
 
@@ -37,10 +36,10 @@ func TestCalculateMedian(t *testing.T) {
 func TestCalculateVariance(t *testing.T) {
 	data := []float64{1, 2, 3, 4, 5}
 	mean := sc.CalculateAverage(data)
-	expected := 2
+	expected := 2.0
 	result := sc.CalculateVariance(data, mean)
 	if result != expected {
-		t.Errorf("calculateVariance(%v, %d) = %d; want %d", data, mean, result, expected)
+		t.Errorf("calculateVariance(%v, %f) = %f; want %f", data, mean, result, expected)
 	}
 }
 
@@ -48,7 +47,7 @@ func TestCalculateVariance(t *testing.T) {
 func TestCalculateStandardDeviation(t *testing.T) {
 	variance := 4.0
 	expected := 2
-	result := sc.CalculateStandardDeviation(int(math.Round(variance)))
+	result := sc.CalculateStandardDeviation(variance)
 	if result != expected {
 		t.Errorf("calculateStandardDeviation(%f) = %d; want %d", variance, result, expected)
 	}
