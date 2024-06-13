@@ -1,9 +1,9 @@
 package statcalc
 
-func CalculateAverage(data []int) int {
-	sum := 0
+func CalculateAverage(data []float64) float64 {
+	sum := 0.0
 	for _, value := range data {
 		sum += value
 	}
-	return sum / len(data)
+	return sum / float64(len(data))
 }
