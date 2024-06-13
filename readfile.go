@@ -6,17 +6,17 @@ import (
 	"strconv"
 )
 
-func ReadDataFromFile(filePath string) ([]int, error) {
+func ReadDataFromFile(filePath string) ([]float64, error) {
 	file, err := os.Open(filePath)
 	if err != nil {
 		return nil, err
 	}
 	defer file.Close()
 
-	var data []int
+	var data []float64
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		num, err := strconv.Atoi(scanner.Text())
+		num, err := strconv.ParseFloat(scanner.Text(), 64)
 		if err != nil {
 			return nil, err
 		}
