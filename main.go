@@ -18,6 +18,9 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	if len(data) == 0 {
+		log.Fatal("Eka vitu kwa file baba!!")
+	}
 
 	// Calculate and print the statistics
 	CalculateAndPrintStatistics(data)
